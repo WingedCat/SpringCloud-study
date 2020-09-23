@@ -1,0 +1,52 @@
+package xpu.edu.hcp.springcloud.controller;
+
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
+import org.springframework.web.bind.annotation.*;
+import xpu.edu.hcp.springcloud.service.PaymentService;
+
+/**                                                                                ____________________
+      _                _                                                           < 神兽护体，永无bug! >
+    | |__  _   _  ___| |__   ___ _ __   __ _ _ __   ___ _ __   __ _                --------------------
+   | '_ \| | | |/ __| '_ \ / _ \ '_ \ / _` | '_ \ / _ \ '_ \ / _` |                       \   ^__^
+  | | | | |_| | (__| | | |  __/ | | | (_| | |_) |  __/ | | | (_| |                        \  (oo)\_______
+ |_| |_|\__,_|\___|_| |_|\___|_| |_|\__, | .__/ \___|_| |_|\__, |                           (__)\       )\/\
+                                   |___/|_|                |___/                                ||----w |
+                                                                                                ||     ||
+ * @author huchengpeng
+ */
+@Slf4j
+@RestController
+@RequestMapping("/payment/")
+public class PaymentController {
+
+    @Autowired
+    private PaymentService paymentService;
+
+    @Value("${server.port}")
+    private String port;
+
+    @Autowired
+    private DiscoveryClient discoveryClient;
+
+    @GetMapping(value = "hystrix/ok/{id}")
+    public String ok(@PathVariable("id") Integer id){
+        return paymentService.paymentInfo_OK(id);
+    }
+
+    @GetMapping(value = "hystrix/timeout/{id}")
+    public String timeout(@PathVariable("id") Integer id){
+       return paymentService.paymentInfo_TIMEOUT(id);
+    }
+
+    //===服务熔断
+    @GetMapping("/hystrix/circuit/{id}")
+    public String paymentCircuitBreaker(@PathVariable("id") Integer id){
+        String result = paymentService.paymentCircuitBreaker(id);
+        log.info("*******result:"+result);
+        return result;
+    }
+
+}

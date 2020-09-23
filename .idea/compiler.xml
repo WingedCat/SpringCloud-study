@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloudalibabasentinelservice8401" />
+        <module name="cloudconfigcenter3344" />
+        <module name="seataaccountservice2003" />
+        <module name="cloudconfigclient3355" />
+        <module name="cloud-provider-payment8001" />
+        <module name="cloudalibabaproviderpayment9004" />
+        <module name="seatastorageservice2002" />
+        <module name="cloudconsumeropenfeignorder80" />
+        <module name="clouddashboardhystrix9001" />
+        <module name="cloudconsumerorder80" />
+        <module name="cloudalibabaproviderpayment9003" />
+        <module name="cloudproviderpayment8004" />
+        <module name="cloudproviderpayment8002" />
+        <module name="cloudproviderpayment8001" />
+        <module name="cloudalibabaconsumernacosorder84" />
+        <module name="cloudalibabaconfignacosclient3377" />
+        <module name="cloudeurekaserver7002" />
+        <module name="cloudeurekaserver7001" />
+        <module name="cloudapicommons" />
+        <module name="cloudalibabaproviderpayment9001" />
+        <module name="cloudconsumerconsulorder80" />
+        <module name="cloudconfigclient3366" />
+        <module name="cloudproviderhystrixpayment8001" />
+        <module name="cloudconsumernacosorder83" />
+        <module name="cloudstreamrabbitmqconsumer8803" />
+        <module name="cloudstreamrabbitmqconsumer8802" />
+        <module name="cloudproviderconsulpayment8006" />
+        <module name="cloudstreamrabbitmqprovider8801" />
+        <module name="cloudconsumerzkorder80" />
+        <module name="cloudgatewaygateway9527" />
+        <module name="cloudconsumerfeignhystrixorder80" />
+        <module name="seataorderservice2001" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-provider-payment8001" target="1.8" />
+      <module name="cloudalibabaconfignacosclient3377" target="1.8" />
+      <module name="cloudalibabaconsumernacosorder84" target="1.8" />
+      <module name="cloudalibabaproviderpayment9001" target="1.8" />
+      <module name="cloudalibabaproviderpayment9003" target="1.8" />
+      <module name="cloudalibabaproviderpayment9004" target="1.8" />
+      <module name="cloudalibabasentinelservice8401" target="1.8" />
+      <module name="cloudapicommons" target="1.8" />
+      <module name="cloudconfigcenter3344" target="1.8" />
+      <module name="cloudconfigclient3355" target="1.8" />
+      <module name="cloudconfigclient3366" target="1.8" />
+      <module name="cloudconsumerconsulorder80" target="1.8" />
+      <module name="cloudconsumerfeignhystrixorder80" target="1.8" />
+      <module name="cloudconsumernacosorder83" target="1.8" />
+      <module name="cloudconsumeropenfeignorder80" target="1.8" />
+      <module name="cloudconsumerorder80" target="1.8" />
+      <module name="cloudconsumerzkorder80" target="1.8" />
+      <module name="clouddashboardhystrix9001" target="1.8" />
+      <module name="cloudeurekaserver7001" target="1.8" />
+      <module name="cloudeurekaserver7002" target="1.8" />
+      <module name="cloudgatewaygateway9527" target="1.8" />
+      <module name="cloudproviderconsulpayment8006" target="1.8" />
+      <module name="cloudproviderhystrixpayment8001" target="1.8" />
+      <module name="cloudproviderpayment8002" target="1.8" />
+      <module name="cloudproviderpayment8004" target="1.8" />
+      <module name="cloudstreamrabbitmqconsumer8802" target="1.8" />
+      <module name="cloudstreamrabbitmqconsumer8803" target="1.8" />
+      <module name="cloudstreamrabbitmqprovider8801" target="1.8" />
+      <module name="hcpspringcloud" target="1.8" />
+      <module name="seataaccountservice2003" target="1.8" />
+      <module name="seataorderservice2001" target="1.8" />
+      <module name="seatastorageservice2002" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
